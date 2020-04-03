@@ -7,8 +7,12 @@ h1 {
     text-align: center;
 }
 
-h3 {
+h3.pc {
     display: none;
+}
+
+h3.mobile {
+    text-align: center;
 }
 
 body {
@@ -26,8 +30,7 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  padding: 15% 40%;
-  display: none;
+  padding: 15% 30%;
 }
 
 .image-block img {

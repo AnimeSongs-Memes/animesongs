@@ -1,0 +1,49 @@
+img {
+    width: 50%;
+    border: 3px solid black;
+  }
+
+div.main {
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+body {
+    background-image: url(/images/background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.selectDisable {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.image-block {
+   position: relative;
+}
+
+.img-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  padding: 15% 40%;
+}
+
+.image-block img {
+  position: relative;
+  text-align: center;
+}

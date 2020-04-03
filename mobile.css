@@ -11,6 +11,10 @@ h3.pc {
     display: none;
 }
 
+h3.mobile {
+    text-align: center;
+}
+
 body {
     background-image: url(images/background.png);
     background-repeat: no-repeat;
@@ -27,7 +31,6 @@ body {
   left: 0;
   z-index: -1;
   padding: 15% 40%;
-  display: none;
 }
 
 .image-block img {

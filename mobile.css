@@ -19,7 +19,6 @@ body {
     background-image: url(images/background.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    overflow-x: hidden;
 }
 
 .image-block {
@@ -31,7 +30,7 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  padding: 15% 40%;
+  padding: 15% 30%;
 }
 
 .image-block img {

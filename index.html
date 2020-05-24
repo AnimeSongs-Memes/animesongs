@@ -18,10 +18,10 @@
 
         <style>
 #topBtn {
-  display: none;
-  position: sticky;
-  bottom: 20px;
-  left: 95%;
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
   z-index: 99;
   font-size: 18px;
   border: none;
@@ -34,6 +34,8 @@
 }
 
 </style>
+
+<button class="pc" onclick="topFunction()" id="topBtn" title="Go to top" style="transform: rotate(90deg);">&lt;</button>
 
 <script>
 //Get the button
@@ -127,8 +129,6 @@ function topFunction() {
 
 <a href="https://youtu.be/7aMOurgDB-o" target="_blank"><div class="image-block"><div class="img-description">Tokyo Ghoul – OP Theme – Unravel</div><img class="selectDisable" src="images/Tokyo Ghoul ΓÇô OP Theme ΓÇô Unravel.jpg" title="Tokyo Ghoul – OP Theme – Unravel"></a></div>
 </div>
-
-<button class="pc" onclick="topFunction()" id="topBtn" title="Go to top" style="transform: rotate(90deg);display: block;">&lt;</button>
 
 <footer style="
     text-align: center;

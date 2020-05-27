@@ -160,7 +160,14 @@ function topFunction() {
 <script type="text/javascript">
 <!--
 if (screen.width <= 699) {
-window.location.href = "m";
+// get all links in the head (including CSS)
+var allLinks = document.head.getElementsByTagName('link');
+// find and replace the element
+for (var i = 0; i < allLinks.length; i++) {
+    if ( allLinks[i].href = "pc.css") {
+        allLinks[i].href = "mobile.css";
+    }
+}
 }
 //-->
 </script>

@@ -1,7 +1,17 @@
-img {
+img, video {
     width: 99%;
     border: 3px solid black;
 }
+
+img.ytIndicator {
+	position: absolute;
+	height: 50px;
+	width: auto;
+	outline: none;
+	border: none;
+	margin-top: -5px;
+}
+
 
 h1 {
     text-align: center;
@@ -33,7 +43,7 @@ body {
   padding: 15% 30%;
 }
 
-.image-block img {
+.image-block img video {
   position: relative;
   text-align: center;
 }

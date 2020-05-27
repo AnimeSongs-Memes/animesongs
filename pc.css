@@ -1,7 +1,20 @@
-img {
+img, video {
     width: 50%;
     border: 3px solid black;
   }
+
+video:hover {
+	cursor: pointer;
+}
+
+img.ytIndicator {
+	position: absolute;
+	height: 70px;
+	width: auto;
+	outline: none;
+	border: none;
+	margin-top: -9px;
+}
 
 div.main {
     width: 100%;
@@ -47,7 +60,7 @@ body {
   padding: 15% 40%;
 }
 
-.image-block img {
+.image-block img video {
   position: relative;
   text-align: center;
 }

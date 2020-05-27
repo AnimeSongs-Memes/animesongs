@@ -1,6 +1,7 @@
 img, video {
     width: 50%;
     border: 3px solid black;
+	object-fit: cover;
   }
 
 video:hover {
@@ -14,6 +15,15 @@ img.ytIndicator {
 	outline: none;
 	border: none;
 	margin-top: -9px;
+}
+
+img.FullscreenBtn {
+	width: 60px;
+	height: auto;
+	position: fixed;
+	left: 95%;
+	bottom: 8%;
+	display: none;
 }
 
 div.main {
@@ -58,9 +68,25 @@ body {
   left: 0;
   z-index: -1;
   padding: 15% 40%;
+  color: #fff8dc00;
 }
 
 .image-block img video {
   position: relative;
   text-align: center;
+}
+
+div.NoScript {
+	position:fixed;
+    padding:0;
+    margin:0;
+
+    top:0;
+    left:0;
+
+    width: 100%;
+    height: 100%;
+    background-color: lightblue;
+	text-align: center;
+	font-size: xxx-large;
 }

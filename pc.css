@@ -43,6 +43,20 @@ h3.mobile {
     display: none;
 }
 
+button.pc {
+    margin: auto;
+    display: block;
+    margin-bottom: inherit;
+    border-radius: 25px;
+    background: darkseagreen;
+    outline: none;
+}
+
+button.pc:hover {
+    cursor: pointer;
+    background: cadetblue;
+}
+
 body {
     background-image: url(images/background.png);
     background-repeat: no-repeat;

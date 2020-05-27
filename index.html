@@ -21,7 +21,8 @@
 
 <h1 name="t">Anime Songs/Memes:</h1>
 <h3 class="pc">You can search for songs with <b>CTRL + F</b></h3>
-<h3 class="pc">You can enter fullscreen with <b>CTRL + Click</b></h3>
+<button class="pc" onclick="alert('Please not this only works when not in fullscreen\nStart/stop video by clicking it\nEnter fullscreen with CTRL + Click\nPause/play with ALT + Click\nStop video with SHIFT + Click')">Click here for video controls</button>
+
 <h3 class="mobile">You can search for songs with <b>Find in page</b></h3>
 
         <style>
@@ -186,6 +187,7 @@ $.each(vids, function(){
 
 $("video").click(function(e) {
 
+// Holding CTRL
      if (e.ctrlKey) {
 	 if (this.requestFullscreen) {
     this.requestFullscreen();
@@ -198,6 +200,38 @@ $("video").click(function(e) {
   }
 	  return;
    }
+
+//Holding ALT
+if (e.altKey) {
+  if (this.paused) {
+    this.play();
+
+	var arrayOfElements=document.getElementsByClassName('FullscreenBtn');
+var lengthOfArray=arrayOfElements.length;
+
+for (var i=0; i<lengthOfArray;i++){
+    arrayOfElements[i].style.display='inline';
+	}
+	return;
+  } else {
+
+	this.pause();
+    
+
+		var arrayOfElements=document.getElementsByClassName('FullscreenBtn');
+var lengthOfArray=arrayOfElements.length;
+
+for (var i=0; i<lengthOfArray;i++){
+    arrayOfElements[i].style.display='none';
+	}
+	return;
+  }
+}
+
+if (e.shiftKey) {
+this.load();
+return;
+}
 
   //console.log(this); 
   if (this.paused) {

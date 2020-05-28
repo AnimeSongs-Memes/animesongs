@@ -15,6 +15,7 @@ img.ytIndicator {
 
 h1 {
     text-align: center;
+	margin-top: 40px;
 }
 
 h3.pc {
@@ -46,4 +47,50 @@ body {
 .image-block img video {
   position: relative;
   text-align: center;
+}
+
+div.SaerchBar {
+    z-index: 1;
+    position: fixed;
+    background-color: darkcyan;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 5px 0;
+	text-align: center;
+}
+
+
+button.SearchBtn {
+    vertical-align: middle;
+    background-color: darkseagreen;
+    border: 2px solid black;
+	border-left: 0.5px solid grey;
+    height: 21px;
+	cursor: pointer;
+	left: 0;
+	outline: none;
+}
+
+button.SearchBtn:active {
+	background-color: cadetblue;
+}
+
+img.SearchBtn {
+	height: 15px;
+	width: auto;
+	border: none;
+	vertical-align: center;
+	pointer-events: none
+}
+
+input#myText1 {
+    vertical-align: middle;
+    background: darkseagreen;
+    border: 2px solid black;
+	border-right: 0.5px solid grey;
+    width: 50%;
+    resize: none;
+	right: 0;
+	outline: none;
 }

@@ -12,6 +12,7 @@
 
     <body>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
+	<script src="SearchBar.js"></script>
 
 <noscript>
 <div style=" position: fixed; top: 0px; left: 0px; z-index: 3000; height: 100%; width: 100%; background-color: lightblue; font-size: xxx-large; text-align: center; ">
@@ -19,8 +20,15 @@
     </div>
 </noscript>
 
+<div class="SaerchBar">
+<div class="SaerchBar2">
+<input name="myText" cols="100" rows="1" id="myText1" type="text" onkeypress="TestEnter();"><button class="SearchBtn" onclick="myFunction1();"><img src="images/SearchBtn.png" class="SearchBtn"></button></input>
+
+</div>
+</div>
+
 <h1 name="t">Anime Songs/Memes:</h1>
-<h3 class="pc">You can search for songs with <b>CTRL + F</b></h3>
+<!-- <h3 class="pc">You can search for songs with <b>CTRL + F</b></h3> -->
 <button class="pc" onclick="alert('Please not this only works when not in fullscreen\nStart/stop video by clicking it\nEnter fullscreen with CTRL + Click\nPause/play with ALT + Click\nStop video with SHIFT + Click')">Click here for video controls</button>
 
 <h3 class="mobile">You can search for songs with <b>Find in page</b></h3>

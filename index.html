@@ -29,7 +29,7 @@
 
 <h1 name="t">Anime Songs/Memes:</h1>
 <!-- <h3 class="pc">You can search for songs with <b>CTRL + F</b></h3> -->
-<button class="pc" onclick="alert('Please not this only works when not in fullscreen\nStart/stop video by clicking it\nEnter fullscreen with CTRL + Click\nPause/play with ALT + Click\nStop video with SHIFT + Click')">Click here for video controls</button>
+<button class="pc" onclick="alert('Please note these only work when not in fullscreen\nCTRL + SHIFT + Click to center video on screen\nStart/stop video by clicking it\nEnter fullscreen with CTRL + Click\nPause/play with ALT + Click\nStop video with SHIFT + Click')">Click here for video controls</button>
 
 <h3 class="mobile">You can search for songs with <b>Find in page</b></h3>
 
@@ -203,6 +203,17 @@ $.each(vids, function(){
 
 $("video").click(function(e) {
 
+   if (e.ctrlKey && e.shiftKey) {
+   Element.prototype.documentOffsetTop = function () {
+    return this.offsetTop + ( this.offsetParent ? this.offsetParent.documentOffsetTop() : 0 );
+};
+
+var top = this.documentOffsetTop() - ( window.innerHeight / 5 );
+window.scrollTo( 0, top );
+//this.scrollIntoView();
+return;
+   }
+
 // Holding CTRL
      if (e.ctrlKey) {
 	 if (this.requestFullscreen) {
@@ -216,6 +227,8 @@ $("video").click(function(e) {
   }
 	  return;
    }
+
+
 
 //Holding ALT
 if (e.altKey) {

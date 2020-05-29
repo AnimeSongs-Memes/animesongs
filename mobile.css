@@ -80,7 +80,7 @@ img.SearchBtn {
 	height: 15px;
 	width: auto;
 	border: none;
-	vertical-align: center;
+	vertical-align: middle;
 	pointer-events: none
 }
 

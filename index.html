@@ -10,7 +10,7 @@
     <title>Anime Songs/Memes</title>
     </head>
 
-    <body>
+    <body onload="TestSearchHeight()">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
 	<script src="SearchBar.js"></script>
 
@@ -22,7 +22,7 @@
 
 <div class="SaerchBar">
 <div class="SaerchBar2">
-<input name="myText" cols="100" rows="1" id="myText1" type="text" onkeypress="TestEnter();"><button class="SearchBtn" onclick="myFunction1();"><img src="images/SearchBtn.png" class="SearchBtn"></button></input>
+<input name="myText" cols="100" rows="1" id="myText1" type="text" onkeypress="TestEnter();"><button id="SearchBtn" class="SearchBtn" onclick="myFunction1();"><img src="images/SearchBtn.png" class="SearchBtn"></button></input>
 
 </div>
 </div>
@@ -286,6 +286,13 @@ for (var i=0; i<lengthOfArray;i++){
 }
   }
 }); 
+</script>
+
+<script>
+function TestSearchHeight() {
+var x = document.getElementById("myText1").offsetHeight;
+document.getElementById('SearchBtn').style.height = x + "px";
+}
 </script>
 
 </body>

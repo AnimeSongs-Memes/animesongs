@@ -16,7 +16,7 @@
 
 <div class="SaerchBar">
 <div class="SaerchBar2">
-<input name="myText" cols="100" rows="1" id="myText1" type="text" onkeypress="TestEnter();"><button id="SearchBtn" class="SearchBtn" onclick="myFunction1();"><img src="../images/SearchBtn.png" class="SearchBtn"></button></input>
+<input name="myText" cols="100" rows="1" id="myText1" type="text" onkeypress="TestEnter();"><button id="SearchBtn" class="SearchBtn" onclick="myFunction1();"><img src="../images/SearchBtn.png" class="SearchBtn" id="SearchBtnImg"></button></input>
 
 </div>
 </div>
@@ -176,6 +176,12 @@ window.location.href = "../";
 function TestSearchHeight() {
 var x = document.getElementById("myText1").offsetHeight;
 document.getElementById('SearchBtn').style.height = x + "px";
+    var container = document.getElementById("SearchBtnImg");
+    var content = container.innerHTML;
+    container.innerHTML= content; 
+    
+   //this line is to watch the result in console , you can remove it later	
+    console.log("Refreshed"); 
 }
 </script>
 

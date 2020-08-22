@@ -12,7 +12,6 @@ img.ytIndicator {
 	margin-top: -5px;
 }
 
-
 h1 {
     text-align: center;
 	margin-top: 40px;
@@ -24,12 +23,6 @@ h3.pc {
 
 h3.mobile {
     text-align: center;
-}
-
-body {
-    background-image: url(images/background.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 .image-block {

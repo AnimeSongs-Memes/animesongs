@@ -176,6 +176,8 @@ function topFunction(){document.body.scrollTop=0;document.documentElement.scroll
 <div class="image-block"><div class="img-description">The Promised Neverland OP 1 - Touch Off</div><video id="noContextMenu" oncontextmenu="if (confirm('Copy YouTube link?')) {setClipboard('https://youtu.be/1JoFsTDfd-8');} else {return;}" src="https://animethemes.moe/video/YakusokuNoNeverland-OP1-NCBD1080.webm" loop="" disablepictureinpicture="" controlslist="nodownload" poster="../images/Yakusoku-no-Neverland-OP-1---Touch-Off.png" title="The Promised Neverland OP 1 - Touch Off" style="background-image:url('../images/Yakusoku-no-Neverland-OP-1---Touch-Off.png'); background-size: cover;"></video></div>
 </div>
 
+<div id="loading"></div>
+
 <footer style="
     text-align: center;
     background-color: white;
@@ -196,6 +198,7 @@ function topFunction(){document.body.scrollTop=0;document.documentElement.scroll
 </footer>
 
 <script>
+function onReady(callback){var intervalId=window.setInterval(function(){if(document.getElementsByTagName('body')[0]!==undefined){window.clearInterval(intervalId);callback.call(this)}},1e3)}function setVisible(selector,visible){document.querySelector(selector).style.display=visible?'block':'none'}onReady(function(){setVisible('.main',true);setVisible('#loading',false)});
 $("video").click(function(e){if(e.ctrlKey&&e.shiftKey){Element.prototype.documentOffsetTop=function(){return this.offsetTop+(this.offsetParent?this.offsetParent.documentOffsetTop():0)};var top=this.documentOffsetTop()-window.innerHeight/5.3;window.scrollTo(0,top);
 //this.scrollIntoView();
 return}

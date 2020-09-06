@@ -14,20 +14,6 @@ function setClipboard(value) {
     }
 })*/
 
-
-$(document).ready(function(){
-   $('video').bind('contextmenu',function() { return false; });
-   $('img').bind('contextmenu',function() { return false; });
-});
-
-//For Firefox we have to handle it in JavaScript 
-var vids = $("video"); 
-$.each(vids, function(){
-       this.controls = false; 
-}); 
-//Loop though all Video tags and set Controls as false
-
-
 function TestSearchHeight() {
 var x = document.getElementById("myText1").offsetHeight;
 document.getElementById('SearchBtn').style.height = x + "px";

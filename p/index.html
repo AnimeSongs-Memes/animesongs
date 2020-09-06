@@ -212,13 +212,13 @@ this.mozRequestFullScreen()}else if(this.webkitRequestFullscreen){/* Chrome, Saf
 this.webkitRequestFullscreen()}else if(this.msRequestFullscreen){/* IE/Edge */
 this.msRequestFullscreen()}return}
 //Holding ALT
-if(e.altKey){if(this.paused){this.play();var arrayOfElements=document.getElementsByClassName("FullscreenBtn");var lengthOfArray=arrayOfElements.length;for(var i=0;i<lengthOfArray;i++){arrayOfElements[i].style.display="inline"}return}else{this.pause();var arrayOfElements=document.getElementsByClassName("FullscreenBtn");var lengthOfArray=arrayOfElements.length;for(var i=0;i<lengthOfArray;i++){arrayOfElements[i].style.display="none"}return}}if(e.shiftKey){this.load();return}
+if(e.altKey){if(this.paused){$("video").css("border-color", "black");this.style.borderColor = "#E0038D";this.play();var arrayOfElements=document.getElementsByClassName("FullscreenBtn");var lengthOfArray=arrayOfElements.length;for(var i=0;i<lengthOfArray;i++){arrayOfElements[i].style.display="inline"}return}else{this.pause();this.style.borderColor = "darkseagreen";var arrayOfElements=document.getElementsByClassName("FullscreenBtn");var lengthOfArray=arrayOfElements.length;for(var i=0;i<lengthOfArray;i++){arrayOfElements[i].style.display="none"}return}}if(e.shiftKey){this.load();$("video").css("border-color", "black");return}
 //console.log(this);
-if(this.paused){vids.load();this.play();
+if(this.paused){vids.load();$("video").css("border-color", "black");this.style.borderColor = "#E0038D";this.play();
 // Display fullscreen button
 var arrayOfElements=document.getElementsByClassName("FullscreenBtn");var lengthOfArray=arrayOfElements.length;for(var i=0;i<lengthOfArray;i++){arrayOfElements[i].style.display="inline"}}else{
 //this.pause();
-this.load();
+this.load();$("video").css("border-color", "black");
 // Hide fullscreen button
 var arrayOfElements=document.getElementsByClassName("FullscreenBtn");var lengthOfArray=arrayOfElements.length;for(var i=0;i<lengthOfArray;i++){arrayOfElements[i].style.display="none"}}});
 </script>

@@ -53,7 +53,7 @@
 var VideoThatPlaying = "5"
 var mybutton=document.getElementById("topBtn");
 var mybutton2=document.getElementById("topBtn2");
-function ScrollToPlayingVid(){if(VideoThatPlaying == 5){return}else{VideoThatPlaying.scrollIntoView({block:"center"})}}
+function ScrollToPlayingVid(){if(VideoThatPlaying == 5){alert("It apears you haven't played a video yet");return}else{VideoThatPlaying.scrollIntoView({block:"center"})}}
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll=function(){scrollFunction()};function scrollFunction(){if(screen.width>699){if(document.body.scrollTop>20||document.documentElement.scrollTop>20){mybutton.style.display="block";mybutton2.style.display="block"}else{mybutton.style.display="none";mybutton2.style.display="none"}}}
 // When the user clicks on the button, scroll to the top of the document
